@@ -29,8 +29,14 @@ public class Gaulois {
 	
 	public void frapper(Romains romain) {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
-		romain.recevoirCoup(force /3);
+		romain.recevoirCoup((force * effetPotion) /3);
+		if (effetPotion > 1) {
+			effetPotion = effetPotion -1 ;
+		}
 	}
 	
+	public void boirePotion(int forcePotion) {
+		this.effetPotion = forcePotion;
+	}
 	
 }

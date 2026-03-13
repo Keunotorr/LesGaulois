@@ -1,8 +1,8 @@
 package personnages;
 
 public class Chaudron {
-	private int quantitePotion = 0;
-	private int forcePotion = 0;
+	public int quantitePotion = 0;
+	public int forcePotion = 0;
 	
 	public Chaudron() {
 		this.quantitePotion = quantitePotion;
@@ -15,7 +15,7 @@ public class Chaudron {
 	}
 	
 	public boolean resterPotion() {
-		return quantitePotion == 0;
+		return (quantitePotion != 0);
 	}
 	
 
