@@ -12,6 +12,7 @@ public class Village {
 	public Village(String nom, Gaulois chef,final int max_villageois) {
 		this.nom = nom;
 		this.chef = chef;
+		chef.SetVillage(this);
 		this.max_villageois = max_villageois;
 		villageois = new Gaulois[max_villageois];
 		villageois[0] = chef;
